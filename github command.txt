@@ -1,0 +1,148 @@
+
+Lenovo@DESKTOP-944575S MINGW64 ~/Desktop/udmy/harshpathak
+$ git init
+Initialized empty Git repository in C:/Users/Lenovo/Desktop/udmy/harshpathak/.git/
+
+
+Lenovo@DESKTOP-944575S MINGW64 ~/Desktop/udmy/harshpathak (main)
+$ git remote add origin  git@github.com:palharshit/harshpathakpal.git
+
+Lenovo@DESKTOP-944575S MINGW64 ~/Desktop/udmy/harshpathak (main)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'github.com:palharshit/harshpathakpal.git'
+
+Lenovo@DESKTOP-944575S MINGW64 ~/Desktop/udmy/harshpathak (main)
+$ git config --global user.email "palharshit1993@gmail.com"
+
+Lenovo@DESKTOP-944575S MINGW64 ~/Desktop/udmy/harshpathak (main)
+$ touch .gitignore
+
+Lenovo@DESKTOP-944575S MINGW64 ~/Desktop/udmy/harshpathak (main)
+$ git add .
+warning: in the working copy of 'client/clientui/.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'client/clientui/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'client/clientui/package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'client/clientui/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'client/clientui/public/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'client/clientui/public/manifest.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'client/clientui/public/robots.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'client/clientui/src/App.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'client/clientui/src/index.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'server/package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'server/package.json', LF will be replaced by CRLF the next time Git touches it
+
+Lenovo@DESKTOP-944575S MINGW64 ~/Desktop/udmy/harshpathak (main)
+$ git commit -m "Initial commit"
+[main (root-commit) 25b2cb9] Initial commit
+ 16 files changed, 30558 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 client/clientui/.gitignore
+ create mode 100644 client/clientui/README.md
+ create mode 100644 client/clientui/package-lock.json
+ create mode 100644 client/clientui/package.json
+ create mode 100644 client/clientui/public/favicon.ico
+ create mode 100644 client/clientui/public/index.html
+ create mode 100644 client/clientui/public/logo192.png
+ create mode 100644 client/clientui/public/logo512.png
+ create mode 100644 client/clientui/public/manifest.json
+ create mode 100644 client/clientui/public/robots.txt
+ create mode 100644 client/clientui/src/App.js
+ create mode 100644 client/clientui/src/index.js
+ create mode 100644 server/app.js
+ create mode 100644 server/package-lock.json
+ create mode 100644 server/package.json
+
+Lenovo@DESKTOP-944575S MINGW64 ~/Desktop/udmy/harshpathak (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Lenovo@DESKTOP-944575S MINGW64 ~/Desktop/udmy/harshpathak (main)
+$ git remote add origin git@github.com:palharshit/harshpathakpal.git
+error: remote origin already exists.
+
+Lenovo@DESKTOP-944575S MINGW64 ~/Desktop/udmy/harshpathak (main)
+$ ssh-keygen -t rsa -b 4096 -
+Too many arguments.
+usage: ssh-keygen [-q] [-a rounds] [-b bits] [-C comment] [-f output_keyfile]
+                  [-m format] [-N new_passphrase] [-O option]
+                  [-t dsa | ecdsa | ecdsa-sk | ed25519 | ed25519-sk | rsa]
+                  [-w provider] [-Z cipher]
+       ssh-keygen -p [-a rounds] [-f keyfile] [-m format] [-N new_passphrase]
+                   [-P old_passphrase] [-Z cipher]
+       ssh-keygen -i [-f input_keyfile] [-m key_format]
+       ssh-keygen -e [-f input_keyfile] [-m key_format]
+       ssh-keygen -y [-f input_keyfile]
+       ssh-keygen -c [-a rounds] [-C comment] [-f keyfile] [-P passphrase]
+       ssh-keygen -l [-v] [-E fingerprint_hash] [-f input_keyfile]
+       ssh-keygen -B [-f input_keyfile]
+       ssh-keygen -D pkcs11
+       ssh-keygen -F hostname [-lv] [-f known_hosts_file]
+       ssh-keygen -H [-f known_hosts_file]
+       ssh-keygen -K [-a rounds] [-w provider]
+       ssh-keygen -R hostname [-f known_hosts_file]
+       ssh-keygen -r hostname [-g] [-f input_keyfile]
+       ssh-keygen -M generate [-O option] output_file
+       ssh-keygen -M screen [-f input_file] [-O option] output_file
+       ssh-keygen -I certificate_identity -s ca_key [-hU] [-D pkcs11_provider]
+                  [-n principals] [-O option] [-V validity_interval]
+                  [-z serial_number] file ...
+       ssh-keygen -L [-f input_keyfile]
+       ssh-keygen -A [-a rounds] [-f prefix_path]
+       ssh-keygen -k -f krl_file [-u] [-s ca_public] [-z version_number]
+                  file ...
+       ssh-keygen -Q [-l] -f krl_file [file ...]
+       ssh-keygen -Y find-principals -s signature_file -f allowed_signers_file
+       ssh-keygen -Y match-principals -I signer_identity -f allowed_signers_file
+       ssh-keygen -Y check-novalidate -n namespace -s signature_file
+       ssh-keygen -Y sign -f key_file -n namespace file [-O option] ...
+       ssh-keygen -Y verify -f allowed_signers_file -I signer_identity
+                  -n namespace -s signature_file [-r krl_file] [-O option]
+C
+Lenovo@DESKTOP-944575S MINGW64 ~/Desktop/udmy/harshpathak (main)
+$ ssh-keygen -t rsa -b 4096 -C "palharshit1993@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Lenovo/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Lenovo/.ssh/id_rsa
+Your public key has been saved in /c/Users/Lenovo/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:UWY9hVFUjUQc/mZNivJleGXHD1P5RLcTPDd2dm1aM+w palharshit1993@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|          +..XX*O|
+|         +  +.o%#|
+|        .    .*O/|
+|         .   o.E*|
+|        S . o = *|
+|           o + o |
+|            .    |
+|                 |
+|                 |
++----[SHA256]-----+
+
+
+Lenovo@DESKTOP-944575S MINGW64 ~/Desktop/udmy/harshpathak (main)
+$ cat /c/Users/Lenovo/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDROdF7Dc/8QUJYIKyIkqxxmbxchDGcS+V+A9ruBo4bcumDYow5rapoFKptx1KSH3hTQR1HEuFZdGvw6O07Vu3ubVafsGqXO+SPiOiO5FUw2Rn3kud1fBQzylpSoZ0g3va1p04AH9PXhObl0APwNRzfh2VogE/QeOSKQjB2pSw6I+lKGJkHAyLcmJj/bp876In9oRXjUdtYelAMjY8CJy5FUgAuEixAY5/IZgNZVxn8Qa4sjyniSsNKYUh8dtXQ5+A7BCQyLxoBJ72OF7dbWqFejK/lc1xmt7W37A2p5r6zU9JQSCOMBQ7zL8JzP6jwwgJqh4OR8fB09rzyOVT14l/TON0yRiuYpvkhih05xL9BNy0/5cOh5pRpW+2jY7BCGbz41jwesOsvwi09XYa2Le/wjLpQJKotTiTz9pnhXp2XyYMlBaUBnBM+YoG8iG2wVTUifrxljWOo7D5y1m4jp+cpCz97KHNtnOouL8mDD0Cee6D6vH0tnkgV28ZrmfNuLp8GVijDlq7+yGGd5ysLH8l08g0dd05xITNPboNYxQiLYanQVLmN4O4aV17I/ar/p0M1bLFbd56UOkjE0rQhVlg51hR+0difRD5GyhHxukJtOlohldYqFIDyGqjTwmcN91W0qcvocan9z2QA5+Chudf0oXH/Wib9+pD1JXC9mtp3AQ== palharshit1993@gmail.com
+
+Lenovo@DESKTOP-944575S MINGW64 ~/Desktop/udmy/harshpathak (main)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'github.com:palharshit/harshpathakpal.git'
+
+
+Lenovo@DESKTOP-944575S MINGW64 ~/Desktop/udmy/harshpathak (main)
+$ git push origin main
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (21/21), done.
+Writing objects: 100% (23/23), 304.29 KiB | 1.29 MiB/s, done.
+Total 23 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To github.com:palharshit/harshpathakpal.git
+ * [new branch]      main -> main
+
